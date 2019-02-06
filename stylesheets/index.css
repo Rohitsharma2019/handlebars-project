@@ -1,19 +1,27 @@
 body{
 
-	font-family: sans-serif;
+	font-family:Roboto;
+    
 
 }
 #address-template, #information{
 	text-align: center;
-	background-color:skyblue;
+	background-color:darkcyan;
 	color:white;
 	padding: 10px;
 }
 #information{
 	margin-top: 5px;
 }
-#hidefirst{
+#hidefirst, #hellobutton{
+    font-size: 15px;
 	padding: 5px 15px 5px 15px;
 	background-color: red;
 	color: white;
+}
+#last-child, #last-div{
+    background-color:black;
+    color:yellow;
+    padding:5px;
+    margin-top: 5px;
 }

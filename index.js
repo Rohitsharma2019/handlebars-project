@@ -6,22 +6,23 @@ window.onload = function (){
     "city": "Gr.Noida",
     "street": "Khanpur",
     "number": "46A",
-    "postoffice": "Kasna"
+    "postoffice": "Kasna",
+    "name": "Rohit",
+    "occupation": "web designer",
+    "file": "main.hbs"
   };
-
-  //Compile the template data into a function
-  // var templateScript = Handlebars.compile(template);
-
-   //var html = templateScript(context);
-  //html = 'My name is Ritesh Kumar . I am a developer.'
+    Handlebars.registerPartial("home", JST['template/home.hbs']);
+    Handlebars.registerPartial("last", JST['template/last.hbs']);
+    
+    
   var template = JST['template/main.hbs'];
   var html = template(context);
   $(document.body).append(html);
 
-  var context2 = { "name" : "Rohit", "occupation" : "Web Designer"};
-  var template2 = JST['template/home.hbs'];
-  var html2 = template2(context2);
-  $(document.body).append(html2);
+//  var context2 = { "name" : "Rohit", "occupation" : "Web Designer"};
+//  var template2 = JST['template/home.hbs'];
+//  var html2 = template2(context2);
+//  $(document.body).append(html2);
 }
 
   function about(){
@@ -32,11 +33,11 @@ window.onload = function (){
   
   }
   else{
-      var context3 = {};
+  var context3 = {};
   var template3 = JST['template/about.hbs'];
   var html3 = template3(context3);
   $(document.body).append(html3);
+      
   }
- } 
-  
- 
+      
+} 
