@@ -11,11 +11,13 @@ window.onload = function (){
     "occupation": "web designer",
     "file": "main.hbs"
   };
-    Handlebars.registerPartial("home", JST['template/home.hbs']);
-    Handlebars.registerPartial("last", JST['template/last.hbs']);
-    
-    
-  var template = JST['template/main.hbs'];
+    Handlebars.registerPartial("home", JST['templates/home.hbs']);
+    Handlebars.registerPartial("last", JST['templates/last.hbs']);
+    Handlebars.registerPartial("sidebar", JST['templates/sidebar.hbs']);
+    Handlebars.registerPartial("footer", JST['templates/footer.hbs']);
+
+
+  var template = JST['templates/main.hbs'];
   var html = template(context);
   $(document.body).append(html);
 
@@ -30,14 +32,14 @@ window.onload = function (){
   if (present) {
     var context3 = {};
    $(document.body).children('div').last().remove();
-  
+
   }
   else{
   var context3 = {};
-  var template3 = JST['template/about.hbs'];
+  var template3 = JST['templates/about.hbs'];
   var html3 = template3(context3);
   $(document.body).append(html3);
-      
+
   }
-      
-} 
+
+}

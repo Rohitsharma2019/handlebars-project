@@ -1,0 +1,109 @@
+footer{
+	margin: 0px auto;
+  margin-left: 155px;
+	clear: both;
+}
+
+/*// FIRST SECTION //*/
+.section-1{
+	height: 61px;
+	background-color: #3bc4fb;
+}
+.first-container{
+	margin: 0px auto;
+    width: 90%;
+}
+.content-1{
+	width: 40%;
+    font-family: sans-serif;
+    color: white;
+    float: left;
+}
+
+.content-2{
+	width: 19%;
+    margin: 15px;
+    float: right;
+}
+.imagesfolder{
+
+    float: right;
+}
+.content-2 img{
+
+    margin-left: 12px;
+}
+
+/*// SECOND SECTION //*/
+
+.section-2{
+    height: 256px;
+	background-color: #10191d;
+}
+.second-container{
+	margin: 0px auto;
+	width: 80%;
+
+	clear: both;
+}
+.list-content1{
+	width: 20%;
+    margin-left: 35px;
+    float: left;
+}
+.list-content1 ul li{
+	font-size: 15px;
+	font-family: sans-serif;
+    line-height: 45px;
+    list-style: none;
+    color: white;
+}
+.list-content1 ul li.blue-color{
+	color:#b1b504;
+}
+.list-content1 li.adrs{
+	width: 108%;
+	margin-left: 23px;
+	list-style-image: url("../images/homeicon1.png");
+	padding-left: 8px;
+
+}
+.list-content1 ul li.mail{
+	margin-left: 23px;
+	list-style-image: url("../images/mailicon1.png");
+	padding-left: 8px;
+
+}
+.list-content1 ul li.contact{
+	width: 100%;
+	margin-left: 23px;
+	list-style-image: url("../images/callicon1.png");
+	padding-left: 8px;
+
+}
+.list-content1 ul li.print{
+	width: 100%;
+	margin-left: 23px;
+	list-style-image: url("../images/printicon1.png");
+	padding-left: 8px;
+
+}
+
+/*// THIRD SECTION //*/
+.section-3{
+
+	background-color: #10191d;
+}
+.content-3{
+    padding-top: 50px;
+    height: 65px;
+	clear: both;
+	margin: 0px auto;
+	width: 90%;
+}
+.content-3 p{
+	font-size: 12px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+}
