@@ -2,7 +2,7 @@ window.onload = function (){
   //Retrieve the template data from the HTML .
   //var template = $('#handlebars-demo').html();
 
-  var context={
+  var context = {
     "city": "Gr.Noida",
     "street": "Khanpur",
     "number": "46A",
@@ -11,15 +11,17 @@ window.onload = function (){
     "occupation": "web designer",
     "file": "main.hbs"
   };
+
     Handlebars.registerPartial("home", JST['templates/home.hbs']);
+    Handlebars.registerPartial("new", JST['templates/new.hbs']);
     Handlebars.registerPartial("last", JST['templates/last.hbs']);
     Handlebars.registerPartial("sidebar", JST['templates/sidebar.hbs']);
     Handlebars.registerPartial("footer", JST['templates/footer.hbs']);
 
 
-  var template = JST['templates/main.hbs'];
-  var html = template(context);
-  $(document.body).append(html);
+    var template = JST['templates/main.hbs'];
+    var html = template(context);
+    $(document.body).append(html);
 
 //  var context2 = { "name" : "Rohit", "occupation" : "Web Designer"};
 //  var template2 = JST['template/home.hbs'];

@@ -1,17 +1,38 @@
 body{
-	margin-top: 10px;
+
 	font-family: sans-serif;
+
 }
 #address-template, #information{
+
 	margin-left:155px;
-	text-align: center;
-	background-color:darkcyan;
-	color:white;
-	padding: 10px;
+	margin-top: 20px;
+	font-family: 'Roboto Mono', monospace;
+	flex-basis: 18%;
+	color: #7D777A;
+    background: #fff;
+    box-shadow: 0 5px 7px darkgrey, 0 1px #1c2929;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: all .15s ease;
 }
 #information{
 	margin-top: 20px;
 	font-family: 'Roboto Mono', monospace;
+	flex-basis: 18%;
+	color: #7D777A;
+    background: #fff;
+    box-shadow: 0 5px 7px darkgrey, 0 1px #1c2929;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: all .15s ease;
+}
+#information h1 ,#address-template h2{
+	color: #D92982;
 }
 #hidefirst, #hellobutton{
     font-size: 15px;
@@ -21,8 +42,8 @@ body{
 }
 #last-child, #last-div{
 	  margin-left:155px;
-    background-color:black;
-    color:yellow;
+    background-color:#ececec;
+
     padding:5px;
     margin-top: 10px;
 }

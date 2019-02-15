@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 
                 dest: 'css/modules.min.css'
               }
-            },
+        },
 
         handlebars: {
             all: {
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-handlebars');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['handlebars']);
+  //  grunt.loadNpmTasks('grunt-contrib-watch');
+
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['cssmin:css_w']);
+    grunt.registerTask('default', ['cssmin:css_w', 'handlebars']);
 };

@@ -1,7 +1,7 @@
 this["JST"] = this["JST"] || {};
 
 this["JST"]["templates/about.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div id=\"info\">\n   <h1>ABOUT ROHIT SHARMA</h1>\n      Welcome sir..this is Rohit sharma\n</div>\n\n<!--<div id=\"wrapper\">\n  	<div id=\"object\">Hello Sir</div>\n</div>-->\n";
+    return "<div id=\"info\">\n   <h1>ABOUT ROHIT SHARMA</h1>\n      <p>Welcome sir..this is Rohit sharma</p>\n</div>\n\n<!--<div id=\"wrapper\">\n  	<div id=\"object\">Hello Sir</div>\n</div>-->\n";
 },"useData":true});
 
 this["JST"]["templates/footer.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -31,7 +31,9 @@ this["JST"]["templates/main.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0
 
   return "\n"
     + ((stack1 = container.invokePartial(partials.sidebar,depth0,{"name":"sidebar","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<div id=\"address-template\">\n  <h3>Address</h3>\n      You can find me in "
+    + ((stack1 = container.invokePartial(partials["new"],depth0,{"name":"new","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + ((stack1 = container.invokePartial(partials.home,depth0,{"name":"home","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "<br>\n<div id=\"address-template\">\n  <h2>Address</h2>\n       You can find me in "
     + alias4(((helper = (helper = helpers.city || (depth0 != null ? depth0.city : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"city","hash":{},"data":data}) : helper)))
     + ". My address is "
     + alias4(((helper = (helper = helpers.number || (depth0 != null ? depth0.number : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"number","hash":{},"data":data}) : helper)))
@@ -39,15 +41,17 @@ this["JST"]["templates/main.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0
     + alias4(((helper = (helper = helpers.street || (depth0 != null ? depth0.street : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"street","hash":{},"data":data}) : helper)))
     + ".\n      My post-office is "
     + alias4(((helper = (helper = helpers.postoffice || (depth0 != null ? depth0.postoffice : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"postoffice","hash":{},"data":data}) : helper)))
-    + ".<br><br><br>\n  <button id=\"hidefirst\" onclick=\"about();\" name=\"About\" value=\"About\">About</button>\n</div>\n"
-    + ((stack1 = container.invokePartial(partials.home,depth0,{"name":"home","data":data,"indent":" ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<div id=\"last-child\">\n    <h4>Hello..This is the last div of this "
+    + ".<br><br><br>\n  <button id=\"hidefirst\" onclick=\"about();\" name=\"About\" value=\"About\">About</button>\n</div>\n <br><br><br>\n<div id=\"last-child\">\n    <h4>Hello..This is the last div of this "
     + alias4(((helper = (helper = helpers.file || (depth0 != null ? depth0.file : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"file","hash":{},"data":data}) : helper)))
     + " file.</h4>\n</div>\n"
     + ((stack1 = container.invokePartial(partials.last,depth0,{"name":"last","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<br><br><br>\n"
+    + "<br><br>\n"
     + ((stack1 = container.invokePartial(partials.footer,depth0,{"name":"footer","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
+
+this["JST"]["templates/new.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"sidebars\">\n    <div class=\"content-1\">\n        <h2>First content</h2>\n        <p> hi this is a first paragraphs.</p>\n    </div>\n    <div class=\"content-2\">\n          <h2>Second content</h2>\n          <p> hi this is a second paragraphs.</p>\n        <div class=\"content-3\">\n            <h2>Third content</h2>\n            <p> hi this is a Third paragraphs.</p>\n        </div>\n    </div>\n</div>\n";
+},"useData":true});
 
 this["JST"]["templates/sidebar.hbs"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "<div id=\"sidebars\">\n  <aside>\n      <ul>\n        <li><a href=\"#about\">About</a></li>\n        <li><a href=\"#about\">Services</a></li>\n        <li><a href=\"#about\">Clients</a></li>\n        <li><a href=\"#about\">Contact</a></li>\n      </ul>\n  </aside>\n</div>\n";

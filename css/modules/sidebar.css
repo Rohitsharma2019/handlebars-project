@@ -1,6 +1,6 @@
 #sidebars{
-  background-color: black;
-  height: 1000px;
+  background-color:grey;
+  height: 100vh;
   width: 150px;
   position: fixed;
   top: 10;
@@ -8,19 +8,26 @@
   left: 10;
   overflow-x: hidden;
   padding-top: 20px;
+  /*text-decoration: none;*/
+
+
 }
 #sidebars ul{
+  list-style-type: none;
   height: 100%;
+
 }
 #sidebars ul li{
+  /*text-decoration: none;*/
   margin-top: 55px;
 }
 a{
+  /*text-decoration: none;*/
   padding: 5px;
   text-align: center;
-  color: darkgrey;
+  color: lightgrey;
   text-decoration: none;
 }
 a:hover{
-  color: white;
+  color: #D92982;
 }

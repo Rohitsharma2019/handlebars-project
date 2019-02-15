@@ -7,7 +7,7 @@ footer{
 /*// FIRST SECTION //*/
 .section-1{
 	height: 61px;
-	background-color: #3bc4fb;
+	background-color: #1d2a35;
 }
 .first-container{
 	margin: 0px auto;
@@ -38,7 +38,7 @@ footer{
 
 .section-2{
     height: 256px;
-	background-color: #10191d;
+	 background-color: #3D383E;
 }
 .second-container{
 	margin: 0px auto;
@@ -92,7 +92,7 @@ footer{
 /*// THIRD SECTION //*/
 .section-3{
 
-	background-color: #10191d;
+	background-color: #3D383E;
 }
 .content-3{
     padding-top: 50px;
