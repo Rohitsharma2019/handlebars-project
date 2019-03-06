@@ -9,11 +9,10 @@ window.onload = function (){
     "postoffice": "Kasna",
     "name": "Rohit",
     "occupation": "web designer",
-    "file": "main.hbs"
+    // "file": "main.hbs"
   };
 
     Handlebars.registerPartial("home", JST['templates/home.hbs']);
-    Handlebars.registerPartial("new", JST['templates/new.hbs']);
     Handlebars.registerPartial("last", JST['templates/last.hbs']);
     Handlebars.registerPartial("sidebar", JST['templates/sidebar.hbs']);
     Handlebars.registerPartial("footer", JST['templates/footer.hbs']);

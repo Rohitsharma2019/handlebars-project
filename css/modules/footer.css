@@ -38,7 +38,8 @@ footer{
 
 .section-2{
     height: 256px;
-	 background-color: #3D383E;
+	 /*background-color: #3D383E;*/
+	  background-image: linear-gradient(to bottom , lightyellow , #157);
 }
 .second-container{
 	margin: 0px auto;
@@ -59,7 +60,7 @@ footer{
     color: white;
 }
 .list-content1 ul li.blue-color{
-	color:#b1b504;
+	color:#feff68;
 }
 .list-content1 li.adrs{
 	width: 108%;
@@ -92,7 +93,8 @@ footer{
 /*// THIRD SECTION //*/
 .section-3{
 
-	background-color: #3D383E;
+	background-color: #157;
+	 /*background-image: linear-gradient(to bottom , lightyellow , #157);*/
 }
 .content-3{
     padding-top: 50px;
