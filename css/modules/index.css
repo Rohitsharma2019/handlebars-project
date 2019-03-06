@@ -40,10 +40,17 @@ body{
 	background-color: red;
 	color: white;
 }
-#last-child, #last-div{
+#last-child{
 	  margin-left:155px;
     background-color:#ececec;
-
+   position: relative;
     padding:5px;
     margin-top: 10px;
+}
+#last-div {
+	position: relative;
+    top: 180px;
+    left: 155px;
+    padding: 20px;
+    background-color: powderblue;
 }

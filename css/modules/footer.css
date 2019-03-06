@@ -1,7 +1,9 @@
 footer{
 	margin: 0px auto;
-  margin-left: 155px;
-	clear: both;
+	    position: relative;
+	    top: 205px;
+	    left: 155px;
+	    clear: both;
 }
 
 /*// FIRST SECTION //*/
